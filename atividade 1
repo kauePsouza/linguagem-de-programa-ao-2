@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace aula_1410_correcao2
+{
+    class Funcionario
+    {
+        private string nome_;
+        private int matricula_;
+        private string cpf_;
+
+        public Funcionario(string nome, int matricula, string cpf)
+        {
+            nome_ = nome;
+            matricula_ = matricula;
+            cpf_ = cpf;
+        }
+
+
+        public string Nome
+
+        {
+            get
+            {
+                return nome_;
+            }
+
+            set
+            {
+                nome_ = value;
+            }
+        }
+
+
+        public int Matricula
+
+        {
+            get
+            {
+                return matricula_;
+            }
+
+            set
+            {
+                matricula_ = value;
+            }
+        }
+
+
+        public string Cpf
+
+        {
+            get
+            {
+                return cpf_;
+            }
+
+            set
+            {
+                cpf_ = value;
+            }
+        }
+        public void imprimeFuncionario()
+        {
+            Console.WriteLine(nome_ + " " + matricula_ + " " + cpf_);
+
+        }
+
+    }
+    }
