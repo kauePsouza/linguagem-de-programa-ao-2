@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Heranca
+{
+    class Pessoa
+    {
+        private string nome;
+        private char sexo;
+        public void setNome (string nome)
+        {
+            this.nome = nome;
+        }
+        public void setSexo(char sexo)
+        {
+            this.sexo = sexo;
+        }
+        public string getNome() { return this.nome; }
+
+        public char getSexo() { return this.sexo; }
+
+        public Pessoa(char sexo)
+        {
+            this.sexo = sexo;
+        }
+        public Pessoa(string nome)
+        {
+            this.nome = nome;
+        }
+        public Pessoa()
+        {
+
+        }
+    }
+}
