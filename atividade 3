@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace aula_1410_correcao2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Funcionario F1 = new Funcionario("maria", 123, "6765657");
+            Funcionario F2 = new Funcionario("pedro", 789, "2213438");
+            Departamento vendas = new Departamento("Vendas");
+
+           
+            vendas.AdicionaFuncionario(F1);
+            vendas.AdicionaFuncionario(F2);
+            vendas.ImprimeDepartamento();
+
+
+        }
+    }
+}
+
+
