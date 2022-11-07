@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace aula_1410_correcao2
+{
+    class Departamento
+    {
+        private string nome_;
+        ArrayList listaFuncionario = new ArrayList();
+
+        public Departamento(string nome) {
+            nome_ = nome;
+
+        }
+        public string Nome
+
+        {
+            get
+            {
+                return nome_;
+            }
+
+            set
+            {
+                nome_ = value;
+            }
+        }
+        public void AdicionaFuncionario(Funcionario f)
+        {
+           listaFuncionario.Add(f);
+         }
+
+        public void ImprimeDepartamento()
+        {
+            Console.WriteLine(".........Funcionarios do Departamento........" + nome_);
+            foreach (Funcionario f in listaFuncionario)
+            {
+                Console.WriteLine(f.Nome + "\n");
+            }
+           
+        }
+     }
+}    
+    
